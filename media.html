@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <title>Roose - Speak your heart out!</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+	<style>
+	#videoContainer {
+		margin: 0px auto;
+		width: 500px;
+		height: 375px;
+		border: 10px #333 solid;
+	}
+	#videoElement {
+		width: 500px;
+		height: 375px;
+		background-color: #666;
+	}
+	#Transcript {
+		width: 750px;
+	
+	}
+	#AutoTranscript {
+		width: 750px;
+	
+	}
+	</style>
+
+</head>
+  
+<body>
+
+
+
+
+
+<!-- Uses a header that scrolls with the text, rather than staying locked at the top -->
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout__header-row">
+	  <!-- Logo -->
+      <img src="IMG/Roose.jpg" width="50" height="50" style="padding-right: 20px">
+      <!-- Title -->
+      <span class="mdl-layout-title">Roose</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.html?#">Cam and auto transcript</a>
+        <a class="mdl-navigation__link" href="text.html?#">Text</a>
+        <a class="mdl-navigation__link" href="media.html?#">Upload media</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Roose</span>
+    <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.html?#">Cam and auto transcript</a>
+        <a class="mdl-navigation__link" href="text.html?#">Text</a>
+        <a class="mdl-navigation__link" href="media.html?#">Upload media</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here -->
+	
+	
+	
+<h1>Upload a speech...</h1>	
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--6-col">
+  
+  
+  
+
+  
+ <div id="videoContainer">
+	<video autoplay="true" id="videoElement" controls>
+		<source src="#" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+</div> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<h2>Evaluation</h2>
+
+<p><b>Your evaluation will apear here... </b></p>
+ 
+<p><b>Topics: </b></p>
+<p id="topics"></p>
+
+<p><b>Abstract topics: </b></p>
+<p id="abstractTopics"></p>
+
+<p><b>Summary: </b></p>
+<p id="summary"></p>
+
+  
+  
+  </div>
+  
+  <div class="mdl-cell mdl-cell--6-col">
+  
+  
+
+<!-- Accent-colored raised button with ripple -->
+
+
+
+
+<!--
+<form runat="server">
+	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="document.getElementById('vidInput').click();">
+	Upload Video
+	<input id="vidInput" type="file" accept="video/mp4" style="display:none;" />
+	</button>
+</form>
+-->
+
+<!-- Textfield with Floating Label -->
+
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="mySrc">
+    <label class="mdl-textfield__label" for="sample3">Enter video URL below...</label>
+  </div>
+</form>
+
+<!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="playSrc()">
+  Submit URL
+</button>
+
+
+<br>
+ 
+<h2>Auto-transcript</h2>
+  
+<p id="transcript"><b>Your transcript will appear here, please be patient: </b></p>   
+
+  
+  
+  
+  </div>
+</div>	
+	
+
+	
+	
+	
+		
+	
+	
+	
+	</div>
+  </main>
+</div>
+
+
+  <!--LINK TO CORRECT JAVSCRIPT FILES-->
+  <script src="JS/main.js"></script>
+  <script src="JS/media.js"></script>
+
+</body>
+
+</html>
