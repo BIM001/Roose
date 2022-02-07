@@ -10,7 +10,7 @@ function connectWebcam(){
 		  console.log("Something went wrong!");
 		});
 	}
-}
+}//bm 2022
 
 
 
